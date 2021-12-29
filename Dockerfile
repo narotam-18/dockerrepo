@@ -1,6 +1,6 @@
 FROM node:14.6
 WORKDIR /app
-COPY proshop_mern/ /app
+COPY . /app
 #RUN yum update -y &&  yum install npm -y
 #RUN yum install curl -y && curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash && source ~/.bashrc && nvm install 14.6
 RUN echo "NODE_ENV = development" > .env
